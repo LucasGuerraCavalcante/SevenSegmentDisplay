@@ -1,6 +1,7 @@
 
 function displayOff() {
     clear();
+    index = 0
     document.getElementById("display").inputMode = sevenSergment();
 }
 
@@ -50,45 +51,43 @@ function countNumbers() {
 }
 
 function setup() {
-    createCanvas(400, 400);
-}
-
-function draw() {
-    background(220);
-    sevenSergment(val);
+    createCanvas(200, 300);
 }
 
 function getColor(val, shift) {
     let r = 0;
     let g = 255;
     let b = 0;
-    let a = 255 * ((val >> shift) & 1);
+    let a = 40+255 * ((val >> shift) & 1);
     return color(r,g,b,a)
 }
 
 function sevenSergment(val) {
+    background(0);
+    noStroke();
+    noFill();
     // A Segment
     fill(getColor(val, 6));
-    rect(60, 20, 78, 18); // (x, y, width, lenght)
+    rect(60, 20, 78, 18, 13); // (x, y, width, lenght, corner)
     // B Segment
     fill(getColor(val, 5));
-    rect(140, 40, 18, 98);
+    rect(140, 40, 18, 98, 13);
     // C Segment
     fill(getColor(val, 4));
-    rect(140, 160, 18, 98);
+    rect(140, 160, 18, 98, 13);
     // D Segment
     fill(getColor(val, 3));
-    rect(60, 260, 78, 18);
+    rect(60, 260, 78, 18, 13);
     // E Segment
     fill(getColor(val, 2));
-    rect(40, 160, 18, 98);
+    rect(40, 160, 18, 98, 13);
     // F Segment
     fill(getColor(val, 1));
-    rect(40, 40, 18, 98);
+    rect(40, 40, 18, 98, 13);
     // G Segment
     fill(getColor(val, 0));
-    rect(60, 140, 78, 18);
+    rect(60, 140, 78, 18, 13);
     // DP Segment
     fill(getColor(val, 8));
-    rect(170, 260, 18, 18);
+    rect(170, 260, 18, 18, 13);
 }
