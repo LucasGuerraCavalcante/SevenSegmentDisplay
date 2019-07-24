@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body onload="displayOff();">
     <select id="selNumber">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -25,6 +25,9 @@
         <option value="9">9</option>
     </select>
     <button type="button" onClick="displayNumber();">Send!</button>
+    <button type="button" onClick="countNumbers();">Count!</button>
+    <button type="button" >Animate!</button>
+    <button type="button" onClick="displayOff();">Turn off!</button>
     <div id="display"> 
         
     </div>

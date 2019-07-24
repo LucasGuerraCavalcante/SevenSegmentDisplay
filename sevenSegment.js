@@ -1,28 +1,52 @@
 
+function displayOff() {
+    clear();
+    document.getElementById("display").inputMode = sevenSergment();
+}
+
+listNumbers = [0x7E, 0x30, 0x6D, 0x79, 0x33, 0x5B, 0x5F, 0x70, 0x7F, 0x7B]
+index = 0
+
 function displayNumber() {
     clear();
     var opt = selNumber.options[selNumber.selectedIndex].text;
     if (opt == "0") {
+        index = 0
         document.getElementById("display").inputMode = sevenSergment(0x7E);
     } else if (opt == "1") {
+        index = 1
         document.getElementById("display").inputMode = sevenSergment(0x30);
     }  else if (opt == "2") {
+        index = 2
         document.getElementById("display").inputMode = sevenSergment(0x6D);
     }  else if (opt == "3") {
+        index = 3
         document.getElementById("display").inputMode = sevenSergment(0x79);
     }  else if (opt == "4") {
+        index = 4
         document.getElementById("display").inputMode = sevenSergment(0x33);
     }  else if (opt == "5") {
+        index = 5
         document.getElementById("display").inputMode = sevenSergment(0x5B);
     }  else if (opt == "6") {
+        index = 6
         document.getElementById("display").inputMode = sevenSergment(0x5F);
     }  else if (opt == "7") {
+        index = 7
         document.getElementById("display").inputMode = sevenSergment(0x70);
     }  else if (opt == "8") {
+        index = 8
         document.getElementById("display").inputMode = sevenSergment(0x7F);
     }  else if (opt == "9") {
+        index = 9
         document.getElementById("display").inputMode = sevenSergment(0x7B);
-    }
+    } 
+}
+
+function countNumbers() {
+    clear();
+    index = (index + 1) % listNumbers.length
+    document.getElementById("display").inputMode = sevenSergment(listNumbers[index]);
 }
 
 function setup() {
