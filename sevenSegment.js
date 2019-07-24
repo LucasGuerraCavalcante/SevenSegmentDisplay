@@ -1,10 +1,37 @@
+
+function displayNumber() {
+    clear();
+    var opt = selNumber.options[selNumber.selectedIndex].text;
+    if (opt == "0") {
+        document.getElementById("display").inputMode = sevenSergment(0x7E);
+    } else if (opt == "1") {
+        document.getElementById("display").inputMode = sevenSergment(0x30);
+    }  else if (opt == "2") {
+        document.getElementById("display").inputMode = sevenSergment(0x6D);
+    }  else if (opt == "3") {
+        document.getElementById("display").inputMode = sevenSergment(0x79);
+    }  else if (opt == "4") {
+        document.getElementById("display").inputMode = sevenSergment(0x33);
+    }  else if (opt == "5") {
+        document.getElementById("display").inputMode = sevenSergment(0x5B);
+    }  else if (opt == "6") {
+        document.getElementById("display").inputMode = sevenSergment(0x5F);
+    }  else if (opt == "7") {
+        document.getElementById("display").inputMode = sevenSergment(0x70);
+    }  else if (opt == "8") {
+        document.getElementById("display").inputMode = sevenSergment(0x7F);
+    }  else if (opt == "9") {
+        document.getElementById("display").inputMode = sevenSergment(0x7B);
+    }
+}
+
 function setup() {
     createCanvas(400, 400);
 }
 
 function draw() {
     background(220);
-    sevenSergment(0x7B);
+    sevenSergment(val);
 }
 
 function getColor(val, shift) {
@@ -37,4 +64,7 @@ function sevenSergment(val) {
     // G Segment
     fill(getColor(val, 0));
     rect(60, 140, 78, 18);
+    // DP Segment
+    fill(getColor(val, 8));
+    rect(170, 260, 18, 18);
 }

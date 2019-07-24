@@ -7,11 +7,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
     <meta charset="utf-8" />
+    <script src="sevenSegment.js"></script>
 
 </head>
 
 <body>
-    <script src="sevenSegment.js"></script>
+    <select id="selNumber">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <button type="button" onClick="displayNumber();">Send!</button>
+    <div id="display"> 
+        
+    </div>
+    
 </body>
 
 </html>
