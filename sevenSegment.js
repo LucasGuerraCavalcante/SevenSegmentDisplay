@@ -51,7 +51,7 @@ function countNumbers() {
 }
 
 function setup() {
-    createCanvas(200, 300);
+    createCanvas(203, 300);
 }
 
 function getColor(val, shift) {
@@ -90,4 +90,13 @@ function sevenSergment(val) {
     // DP Segment
     fill(getColor(val, 8));
     rect(170, 260, 18, 18, 13);
+    // Borders
+    fill(111);
+    rect(0, 0, 5, 300);
+    fill(111);
+    rect(0, 0, 300, 5);
+    fill(111);
+    rect(198, 0, 5, 300);
+    fill(111);
+    rect(0, 295, 300, 5);
 }
