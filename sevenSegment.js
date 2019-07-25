@@ -102,3 +102,4 @@ function sevenSergment(val) {
     fill(111);
     rect(0, 295, 300, 5);
 }
+
