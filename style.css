@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: techFont;
+    src: url(techFont.ttf)
+}
+
+#title {
+    background-color: black;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+    font-family: techFont;
+    font-size: 70px;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: rgb(0, 255, 0);
+    width: 100px;
+    height: 30px;
+    border-color: rgb(0, 255, 0);
+    font-size: 20px;
+    font-family: techFont;
+}
+
+select {
+    background-color: black;
+    color: rgb(0, 255, 0);
+    width: 100px;
+    height: 30px;
+    box-sizing: border-box;
+    border-color: rgb(0, 255, 0);
+    padding-bottom: 6px;
+    font-family: techFont;
+}
+

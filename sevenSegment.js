@@ -1,4 +1,3 @@
-
 function displayOff() {
     clear();
     index = 0
@@ -17,31 +16,31 @@ function displayNumber() {
     } else if (opt == "1") {
         index = 1
         document.getElementById("display").inputMode = sevenSergment(0x30);
-    }  else if (opt == "2") {
+    } else if (opt == "2") {
         index = 2
         document.getElementById("display").inputMode = sevenSergment(0x6D);
-    }  else if (opt == "3") {
+    } else if (opt == "3") {
         index = 3
         document.getElementById("display").inputMode = sevenSergment(0x79);
-    }  else if (opt == "4") {
+    } else if (opt == "4") {
         index = 4
         document.getElementById("display").inputMode = sevenSergment(0x33);
-    }  else if (opt == "5") {
+    } else if (opt == "5") {
         index = 5
         document.getElementById("display").inputMode = sevenSergment(0x5B);
-    }  else if (opt == "6") {
+    } else if (opt == "6") {
         index = 6
         document.getElementById("display").inputMode = sevenSergment(0x5F);
-    }  else if (opt == "7") {
+    } else if (opt == "7") {
         index = 7
         document.getElementById("display").inputMode = sevenSergment(0x70);
-    }  else if (opt == "8") {
+    } else if (opt == "8") {
         index = 8
         document.getElementById("display").inputMode = sevenSergment(0x7F);
-    }  else if (opt == "9") {
+    } else if (opt == "9") {
         index = 9
         document.getElementById("display").inputMode = sevenSergment(0x7B);
-    } 
+    }
 }
 
 function countNumbers() {
@@ -51,15 +50,18 @@ function countNumbers() {
 }
 
 function setup() {
-    createCanvas(203, 300);
+    var cnv = createCanvas(203, 300);
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 3;
+    cnv.position(x, y);
 }
 
 function getColor(val, shift) {
     let r = 0;
     let g = 255;
     let b = 0;
-    let a = 40+255 * ((val >> shift) & 1);
-    return color(r,g,b,a)
+    let a = 40 + 255 * ((val >> shift) & 1);
+    return color(r, g, b, a)
 }
 
 function sevenSergment(val) {
