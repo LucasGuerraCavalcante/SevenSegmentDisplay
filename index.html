@@ -2,11 +2,25 @@
 <html>
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- P5.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    
+    <!-- Jquery -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+
+    <!-- Style CSS -->
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-    <meta charset="utf-8" />
+    
+    <!-- JavaScript Seven Segment Display functions -->
     <script src="sevenSegment.js"></script>
 
 </head>
@@ -26,7 +40,7 @@
     </select>
     <button type="button" onClick="displayNumber();">Send!</button>
     <button type="button" onClick="countNumbers();">Count!</button>
-    <button type="button" >Animate!</button>
+    <button type="button" onClick="alert('On progress!')">Animate!</button>
     <button type="button" onClick="displayOff();">Turn off!</button>
     <div id="display" style="margin: 25px;">  
         
