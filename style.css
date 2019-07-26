@@ -7,15 +7,6 @@ body {
     src: url(techFont.ttf)
 }
 
-#title {
-    background-color: black;
-    color: rgb(0, 255, 0);
-    font-weight: bold;
-    font-family: techFont;
-    font-size: 70px;
-    padding: 20px;
-    text-align: center;
-}
 
 button {
     background-color: black;
@@ -39,11 +30,57 @@ select {
     font-family: techFont;
 }
 
-#footer {
-    padding-top: 50px;
+
+
+
+
+
+
+
+.title {
+    background-color: black;
+    font-weight: bold;
+    font-family: techFont;
+    font-size: 70px;
+    padding: 20px;
+    text-align: center;
+}
+
+#greenTitle {
     color: rgb(0, 255, 0);
 }
 
-#change_color {
+#redTitle {
+    color: rgb(255, 0, 0);
+}
+
+#blueTitle {
+    color: rgb(0, 0, 255);
+}
+
+
+
+
+
+
+
+
+.footerText {
+    padding-top: 50px;
+}
+
+#greenFooterText {
+    color: rgb(0, 255, 0);
+}
+
+#redFooterText{
+    color: rgb(255, 0, 0);
+}
+
+#blueFooterText {
+    color: rgb(0, 0, 255);
+}
+
+#selColorPedding {
     padding-top: 400px;
 }

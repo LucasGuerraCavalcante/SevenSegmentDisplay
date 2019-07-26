@@ -17,20 +17,18 @@ function changeColor() {
         r = 255;
         g = 0;
         b = 0;
-        newColor = document.getElementsByClassName("useDisplayColor")
-        newColor.style.color = "rgb(255, 0, 0);";
+        // newColor = document.getElementsByClassName("useDisplayColor")
+        // newColor.style.color = "rgb(255, 0, 0);";
     } else if (opt == "Blue") {
         r = 0;
         g = 0;
         b = 255;
-        newColor = document.getElementsByClassName("useDisplayColor")
-        newColor.style.color = "rgb(0, 0, 255);";
-    } else {
+        // newColor = document.getElementsByClassName("useDisplayColor")
+        // newColor.style.color = "rgb(0, 0, 255);";
+    } else if (opt == "Green"){
         r = 0;
         g = 255;
         b = 0;
-        newColor = document.getElementsByClassName("useDisplayColor")
-        newColor.style.color = "rgb(0, 255, 0);";
     }
     clear();
     document.getElementById("display").inputMode = sevenSergment(listNumbers[index]);
@@ -128,7 +126,6 @@ function displayNumber() {
 
 // Function to display the next number on order when you click the button
 function countNumbers() {
-    // To clean the draw
     clear();
     // To turn the current index value into the next index value (+1)
     index = (index + 1) % listNumbers.length
@@ -137,10 +134,7 @@ function countNumbers() {
 
 // Function to turn the Display "off"
 function displayOff() {
-    // To clean the draw
     clear();
-    // To reset the listNumbers Index
     index = 0
-    // To draw it turned "off"
     document.getElementById("display").inputMode = sevenSergment();
 }
