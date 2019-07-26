@@ -39,3 +39,11 @@ select {
     font-family: techFont;
 }
 
+#footer {
+    padding-top: 50px;
+    color: rgb(0, 255, 0);
+}
+
+#change_color {
+    padding-top: 400px;
+}
