@@ -119,7 +119,7 @@ function displayNumber() {
     var opt = selNumber.options[selNumber.selectedIndex].text;
     if (opt == "0") {
         index = 0
-        document.getElementByClass("display").inputMode = sevenSergment(0x7E);
+        document.getElementById("display").inputMode = sevenSergment(0x7E);
     } else if (opt == "1") {
         index = 1
         document.getElementById("display").inputMode = sevenSergment(0x30);
