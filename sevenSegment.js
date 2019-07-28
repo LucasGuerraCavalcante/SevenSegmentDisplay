@@ -14,21 +14,47 @@ function changeColor() {
     // To see which color did the user selected
     var opt = selColor.options[selColor.selectedIndex].text;
     if (opt == "Red") {
+        // Changing the RGB display 
         r = 255;
         g = 0;
         b = 0;
-        // newColor = document.getElementsByClassName("useDisplayColor")
-        // newColor.style.color = "rgb(255, 0, 0);";
+        // To see which color did the user selected
+        document.getElementById("selColor").className = "redSelect";
+        document.getElementById("selNumber").className = "redSelect";
+        document.getElementById("buttonDisplay").className = "redSelect";
+        document.getElementById("buttonCount").className = "redSelect";
+        document.getElementById("buttonAnimete").className = "redSelect";
+        document.getElementById("buttonTurnOff").className = "redSelect";
+        document.getElementById("buttonChangeColor").className = "redSelect";
+        document.getElementById("footerText").className = "redFooterText";
+        document.getElementById("title").className = "redTitle";
     } else if (opt == "Blue") {
         r = 0;
         g = 0;
         b = 255;
-        // newColor = document.getElementsByClassName("useDisplayColor")
-        // newColor.style.color = "rgb(0, 0, 255);";
+        document.getElementById("selColor").className = "blueSelect";
+        document.getElementById("selNumber").className = "blueSelect";
+        document.getElementById("buttonDisplay").className = "blueSelect";
+        document.getElementById("buttonCount").className = "blueSelect";
+        document.getElementById("buttonAnimete").className = "blueSelect";
+        document.getElementById("buttonTurnOff").className = "blueSelect";
+        document.getElementById("buttonChangeColor").className = "blueSelect";
+        document.getElementById("footerText").className = "blueFooterText";
+        document.getElementById("title").className = "blueTitle";
+        
     } else if (opt == "Green"){
         r = 0;
         g = 255;
         b = 0;
+        document.getElementById("selColor").className = "greenSelect";
+        document.getElementById("selNumber").className = "greenSelect";
+        document.getElementById("buttonDisplay").className = "greenSelect";
+        document.getElementById("buttonCount").className = "greenSelect";
+        document.getElementById("buttonAnimete").className = "greenSelect";
+        document.getElementById("buttonTurnOff").className = "greenSelect";
+        document.getElementById("buttonChangeColor").className = "greenSelect";
+        document.getElementById("footerText").className = "greenFooterText";
+        document.getElementById("title").className = "greenTitle";
     }
     clear();
     document.getElementById("display").inputMode = sevenSergment(listNumbers[index]);
@@ -93,7 +119,7 @@ function displayNumber() {
     var opt = selNumber.options[selNumber.selectedIndex].text;
     if (opt == "0") {
         index = 0
-        document.getElementById("display").inputMode = sevenSergment(0x7E);
+        document.getElementByClass("display").inputMode = sevenSergment(0x7E);
     } else if (opt == "1") {
         index = 1
         document.getElementById("display").inputMode = sevenSergment(0x30);

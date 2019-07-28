@@ -1,3 +1,9 @@
+/* ---------------------- */
+/* ---------------------- */
+/* --- General Styles --- */
+/* ---------------------- */
+/* ---------------------- */
+
 body {
     background-color: black;
 }
@@ -7,37 +13,74 @@ body {
     src: url(techFont.ttf)
 }
 
+/* ---------------------- */
+/* ---------------------- */
+/* ------- Buttons ------ */
+/* ---------------------- */
+/* ---------------------- */
 
 button {
     background-color: black;
-    color: rgb(0, 255, 0);
     width: 100px;
     height: 30px;
     padding: 0px;
-    border-color: rgb(0, 255, 0);
     font-size: 20px;
     font-family: techFont;
 }
 
+.greenButton {
+    color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0);
+}
+
+.redButton {
+    color: rgb(255, 0, 0);
+    border-color: rgb(0, 255, 0);
+}
+
+.blueButton {
+    color: rgb(0, 0, 255);
+    border-color: rgb(0, 255, 0);
+}
+
+/* ---------------------- */
+/* ---------------------- */
+/* ------- Selects ------ */
+/* ---------------------- */
+/* ---------------------- */
+
+
 select {
     background-color: black;
-    color: rgb(0, 255, 0);
     width: 100px;
     height: 30px;
     box-sizing: border-box;
-    border-color: rgb(0, 255, 0);
     padding-bottom: 6px;
     font-family: techFont;
 }
 
+.greenSelect {
+    color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0);
+}
 
+.redSelect {
+    color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
+}
 
+.blueSelect {
+    color: rgb(0, 0, 255);
+    border-color: rgb(0, 0, 255);
+}
 
+/* ---------------------- */
+/* ---------------------- */
+/* ------- Title -------- */
+/* ---------------------- */
+/* ---------------------- */
 
-
-
-
-.title {
+#title {
     background-color: black;
     font-weight: bold;
     font-family: techFont;
@@ -46,38 +89,36 @@ select {
     text-align: center;
 }
 
-#greenTitle {
+.greenTitle {
     color: rgb(0, 255, 0);
 }
 
-#redTitle {
+.redTitle {
     color: rgb(255, 0, 0);
 }
 
-#blueTitle {
+.blueTitle {
     color: rgb(0, 0, 255);
 }
 
+/* ---------------------- */
+/* ---------------------- */
+/* ----- Footer Text ---- */
+/* ---------------------- */
+/* ---------------------- */
 
-
-
-
-
-
-
-.footerText {
+.greenFooterText {
     padding-top: 50px;
-}
-
-#greenFooterText {
     color: rgb(0, 255, 0);
 }
 
-#redFooterText{
+.redFooterText{
+    padding-top: 50px;
     color: rgb(255, 0, 0);
 }
 
-#blueFooterText {
+.blueFooterText {
+    padding-top: 50px;
     color: rgb(0, 0, 255);
 }
 

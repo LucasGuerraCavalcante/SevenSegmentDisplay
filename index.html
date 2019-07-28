@@ -29,13 +29,13 @@
     <div class="container-fluid">
         <div class="d-flex justify-content-center">
             <div class="row" id="divTitle">
-                <h3 class="title" id="greenTitle">Seven Segment Display - JavaScript</h3>
+                <h3 class="greenTitle" id="title">Seven Segment Display - JavaScript</h3>
             </div>
         </div>
         <div class="d-flex justify-content-center">
             <div class="row" id="divButtons">
                 <div class="col">
-                    <select class="selNumber" id="greenSelect1">
+                    <select class="greenSelect" id="selNumber"> 
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -49,16 +49,16 @@
                     </select>
                 </div>
                 <div class="col">
-                    <button type="button" id="greenButton1" onClick="displayNumber();">Send</button>
+                    <button type="button" class="greenButton" id="buttonDisplay" onClick="displayNumber();">Send</button>
                 </div>
                 <div class="col">
-                    <button type="button" id="greenButton2" onClick="countNumbers();">Count</button>
+                    <button type="button" class="greenButton" id="buttonCount" onClick="countNumbers();">Count</button>
                 </div>
                 <div class="col">
-                    <button type="button" id="greenButton3" onClick="alert('On progress!')">Animate</button>
+                    <button type="button" class="greenButton" id="buttonAnimete" onClick="alert('On progress!')">Animate</button>
                 </div>
                 <div class="col">
-                    <button type="button" id="greenButton4" onClick="displayOff();">Turn off</button>
+                    <button type="button" class="greenButton" id="buttonTurnOff" onClick="displayOff();">Turn off</button>
                 </div>
             </div>
         </div>
@@ -67,21 +67,21 @@
         </div>
         <div class="d-flex justify-content-center" id="selColorPedding">
             <div class="row">
-                <div class="col" id="greenSelect2">
-                    <select id="selColor">
+                <div class="col">
+                    <select class="greenSelect" id="selColor">
                         <option value="Green">Green</option>
                         <option value="Red">Red</option>
                         <option value="Blue">Blue</option>
                     </select>
                 </div>
                 <div class="col">
-                    <button type="button" id="greenButton5" onClick="changeColor();">Send</button>
+                    <button type="button" class="greenButton" id="buttonChangeColor" onClick="changeColor();">Send</button>
                 </div>
             </div>
         </div>
         <div class="d-flex justify-content-center">
             <div class="row" id="footer">
-                <p class="footerText" id="greenFooterText"> Developed by Lucas Guerra based on a video from "The Coding
+                <p class="greenFooterText" id="footerText"> Developed by Lucas Guerra based on a video from "The Coding
                     Train"</p><br>
             </div>
         </div>
